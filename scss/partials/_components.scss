@@ -1,0 +1,59 @@
+/* COMPONENTS ------------------------------------- */
+
+.main-nav {
+  margin-top: 1em;
+  li {
+    display: inline-block;
+    margin: 0 0.65em;
+  }
+  a {
+    color: $white;
+    font-size: 0.85em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5em;
+    transition: 0.3s;
+    &:hover {
+      color: $color-accent;  
+    }
+  }
+}
+
+.img-featured {
+  width: 165px;
+  border: 4px solid $white; 
+  border-radius: 50%;
+  margin-top: 75px;
+  position: relative;
+  z-index: 100;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em 1em;
+  border: 1px solid $color-shade;
+  border-radius: 0.25em;
+  h1 {
+    margin: 0.35em 0 0;
+    line-height: 1.25;
+  }  
+  .icon,
+  h1 {
+    color: $color-primary;
+  }
+}
+
+.btn {
+  &-callout {
+    @extend %btn;
+    font-size: 1.1em;
+    background-color: $color-secondary;
+  }
+  &-info {
+    @extend %btn;
+    font-size: 0.85em;
+    background-color: $color-primary;  
+    margin-top: auto;
+  }
+}
